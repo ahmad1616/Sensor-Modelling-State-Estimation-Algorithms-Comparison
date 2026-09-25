@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+    <generic>
+        <output>
+
+            <line_separator>\n</line_separator>
+            <var_separator>,</var_separator>
+            <binary_mode>false</binary_mode>
+            <flush_after_each_line>true</flush_after_each_line>
+
+            <!-- Attitude -->
+            <chunk>
+                <node>/orientation/roll-deg</node>
+                <type>double</type>
+                <format>%.9f</format>
+            </chunk>
+
+            <chunk>
+                <node>/orientation/pitch-deg</node>
+                <type>double</type>
+                <format>%.9f</format>
+            </chunk>
+
+            <chunk>
+                <node>/orientation/heading-deg</node>
+                <type>double</type>
+                <format>%.9f</format>
+            </chunk>
+
+            <!-- Angular rates -->
+            <chunk>
+                <node>/orientation/roll-rate-degps</node>
+                <type>double</type>
+                <format>%.9f</format>
+            </chunk>
+
+            <chunk>
+                <node>/orientation/pitch-rate-degps</node>
+                <type>double</type>
+                <format>%.9f</format>
+            </chunk>
+
+            <chunk>
+                <node>/orientation/yaw-rate-degps</node>
+                <type>double</type>
+                <format>%.9f</format>
+            </chunk>
+
+            <!-- Body-frame accelerations -->
+            <chunk>
+                <node>/accelerations/pilot/x-accel-fps_sec</node>
+                <type>double</type>
+                <format>%.9f</format>
+            </chunk>
+
+            <chunk>
+                <node>/accelerations/pilot/y-accel-fps_sec</node>
+                <type>double</type>
+                <format>%.9f</format>
+            </chunk>
+
+            <chunk>
+                <node>/accelerations/pilot/z-accel-fps_sec</node>
+                <type>double</type>
+                <format>%.9f</format>
+            </chunk>
+
+            <!-- Airspeed -->
+            <chunk>
+                <node>/velocities/airspeed-kt</node>
+                <type>double</type>
+                <format>%.9f</format>
+            </chunk>
+
+            <!-- Body-frame velocities -->
+            <chunk>
+                <node>/velocities/uBody-fps</node>
+                <type>double</type>
+                <format>%.9f</format>
+            </chunk>
+
+            <chunk>
+                <node>/velocities/vBody-fps</node>
+                <type>double</type>
+                <format>%.9f</format>
+            </chunk>
+
+            <chunk>
+                <node>/velocities/wBody-fps</node>
+                <type>double</type>
+                <format>%.9f</format>
+            </chunk>
+
+            <!-- Altitude -->
+            <chunk>
+                <node>/position/altitude-ft</node>
+                <type>double</type>
+                <format>%.9f</format>
+            </chunk>
+
+        </output>
+    </generic>
+</PropertyList>
